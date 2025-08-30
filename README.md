@@ -1,20 +1,45 @@
-Este código foi desenvolvido como case em um processo seletivo. A proposta era desenvolver um projeto java, com os seguintes requisitos:
+# Projeto Java - Case de Processo Seletivo
 
-1– Classe Pessoa com os atributos: nome (String) e data nascimento (LocalDate).
+Este código foi desenvolvido como parte de um **case em um processo seletivo**.  
+A proposta era desenvolver um projeto Java com os seguintes requisitos:
 
-2 – Classe Funcionário que estenda a classe Pessoa, com os atributos: salário (BigDecimal) e função (String).
+---
 
-3 – Deve conter uma classe Principal para executar as seguintes ações:
-3.1 – Inserir todos os funcionários, na mesma ordem e informações da tabela acima.
-3.2 – Remover o funcionário “João” da lista.
-3.3 – Imprimir todos os funcionários com todas suas informações, sendo que:
-• informação de data deve ser exibido no formato dd/mm/aaaa;
-• informação de valor numérico deve ser exibida no formatado com separador de milhar como ponto e decimal como vírgula.
-3.4 – Os funcionários receberam 10% de aumento de salário, atualizar a lista de funcionários com novo valor.
-3.5 – Agrupar os funcionários por função em um MAP, sendo a chave a “função” e o valor a “lista de funcionários”.
-3.6 – Imprimir os funcionários, agrupados por função.
-3.8 – Imprimir os funcionários que fazem aniversário no mês 10 e 12.
-3.9 – Imprimir o funcionário com a maior idade, exibir os atributos: nome e idade.
-3.10 – Imprimir a lista de funcionários por ordem alfabética.
-3.11 – Imprimir o total dos salários dos funcionários.
-3.12 – Imprimir quantos salários mínimos ganha cada funcionário, considerando que o salário mínimo é R$1212.00.
+## 1. Classe `Pessoa`
+
+- Atributos:
+  - `nome` (String)
+  - `dataNascimento` (LocalDate)
+
+---
+
+## 2. Classe `Funcionario`
+
+- Estende a classe `Pessoa`.
+- Atributos adicionais:
+  - `salario` (BigDecimal)
+  - `funcao` (String)
+
+---
+
+## 3. Classe `Principal`
+
+Responsável por executar as ações:
+
+1. Inserir todos os funcionários na lista, mantendo a ordem e informações da tabela fornecida.  
+2. Remover o funcionário **“João”** da lista.  
+3. Imprimir todos os funcionários com todas as informações:
+   - Datas no formato **dd/MM/aaaa**
+   - Valores numéricos com separador de milhar como ponto e decimal como vírgula
+4. Aplicar **10% de aumento de salário** e atualizar a lista.  
+5. Agrupar os funcionários por função em um **MAP** (chave = função, valor = lista de funcionários).  
+6. Imprimir os funcionários agrupados por função.  
+7. Imprimir os funcionários que fazem aniversário nos meses **10 e 12**.  
+8. Imprimir o funcionário com a **maior idade**, mostrando nome e idade.  
+9. Imprimir a lista de funcionários por **ordem alfabética**.  
+10. Imprimir o **total dos salários** dos funcionários.  
+11. Imprimir quantos **salários mínimos** cada funcionário recebe, considerando que o salário mínimo é **R$ 1.212,00**.
+
+---
+
+> Desenvolvido em Java, utilizando boas práticas de programação, manipulação de datas e valores financeiros com `BigDecimal`.
